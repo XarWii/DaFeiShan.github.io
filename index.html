@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐！我最心爱的小猪！</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <div id="particles-js"></div>
+    
+    <!-- 主内容容器 -->
+    <div class="container">
+        <!-- 头部 -->
+        <header>
+            <h1 id="birthday-wish">生日快乐！我最心爱的小猪！</h1>
+            <div class="birthday-countdown">
+                <span id="days"></span>
+                <span id="hours"></span>
+                <span id="minutes"></span>
+                <span id="seconds"></span>
+            </div>
+        </header>
+        
+        <!-- 主要信息区域 -->
+        <main>
+            <!-- 爱心图片 -->
+            <!-- <div class="heart-container">
+                <div class="heart"></div>
+            </div> -->
+            
+            <!-- Lottie动画 -->
+            <!-- <div style="display: flex; justify-content: center; margin: 2rem 0;">
+                <dotlottie-wc src="https://lottie.host/8b1de420-fbf3-4ff9-984e-04558d5acd67/1Kv8WlDvQq.lottie" style="width: 300px; height: 300px" speed="1" autoplay loop></dotlottie-wc>
+            </div> -->
+            <!-- 爱心图片和动画区域 -->
+            <div style="display: flex; justify-content: center; align-items: center; gap: 60px; margin-bottom: 3rem;">
+    <!-- Lottie动画 - 位于爱心左侧 -->
+                <div style="width: 300px; height: 300px;">
+                    <dotlottie-wc src="https://lottie.host/8b1de420-fbf3-4ff9-984e-04558d5acd67/1Kv8WlDvQq.lottie" style="width: 100%; height: 100%;" speed="1" autoplay loop></dotlottie-wc>
+                </div>
+    
+    <!-- 爱心图片 -->
+                <div class="heart-container">
+                    <div class="heart"></div>
+                </div>
+                
+    <!-- Lottie动画 - 位于爱心右侧 -->
+                <div style="width: 300px; height: 300px;">
+                    <dotlottie-wc src="https://lottie.host/8aca5568-0b0f-4ae3-b332-12ba66e598c8/o2Awh0NJVh.lottie" style="width: 100%; height: 100%;" speed="1" autoplay loop></dotlottie-wc>
+                </div>
+            </div>
+            
+            <!-- 照片展示区域和甜言蜜语 -->
+            <div class="content-wrapper">
+                <!-- 照片展示区域 -->
+                <div class="photo-placeholder" id="slideshow-container">
+                    <img src="./images/IMG20250711195431.jpg" class="slideshow-image active" alt="我们的照片1">
+                    <img src="./images/IMG20250711195828.jpg" class="slideshow-image" alt="我们的照片2">
+                    <img src="./images/IMG20250712105839.jpg" class="slideshow-image" alt="我们的照片3">
+                    <img src="./images/IMG20250712110044.jpg" class="slideshow-image" alt="我们的照片4">
+                    <img src="./images/IMG20250712110057_01.jpg" class="slideshow-image" alt="我们的照片5">
+                    <img src="./images/IMG20250712110117.jpg" class="slideshow-image" alt="我们的照片6">
+                    <img src="./images/IMG20250712110155_01.jpg" class="slideshow-image" alt="我们的照片7">
+                    <img src="./images/IMG20250712110540.jpg" class="slideshow-image" alt="我们的照片8">
+                    <img src="./images/IMG20250712123717.jpg" class="slideshow-image" alt="我们的照片9">
+                    <img src="./images/IMG20250712123747_01.jpg" class="slideshow-image" alt="我们的照片10">
+                    <img src="./images/IMG20250712124315.jpg" class="slideshow-image" alt="我们的照片11">
+                    <img src="./images/IMG20250712124321.jpg" class="slideshow-image" alt="我们的照片12">
+                    <img src="./images/IMG20250712125020.jpg" class="slideshow-image" alt="我们的照片13">
+                    <img src="./images/IMG20250712130127.jpg" class="slideshow-image" alt="我们的照片14">
+                    <img src="./images/IMG20250712130158.jpg" class="slideshow-image" alt="我们的照片15">
+                    <img src="./images/IMG20250712130249.jpg" class="slideshow-image" alt="我们的照片16">
+                    <img src="./images/IMG20250712130409.jpg" class="slideshow-image" alt="我们的照片17">
+                    <img src="./images/IMG20250712130600.jpg" class="slideshow-image" alt="我们的照片18">
+                    <img src="./images/IMG20250712130716.jpg" class="slideshow-image" alt="我们的照片19">
+                    <img src="./images/IMG20250713115400.jpg" class="slideshow-image" alt="我们的照片20">
+                    <img src="./images/IMG_20250712_170412.jpg" class="slideshow-image" alt="我们的照片21">
+                    <img src="./images/mmexport1753857936715.jpg" class="slideshow-image" alt="我们的照片22">
+                </div>
+                
+                <!-- 甜言蜜语 -->
+                <div class="love-message">
+                    <p id="message-line-1">亲爱的，今天是你的生日</p>
+                    <p id="message-line-2">我想告诉你，你是我生命中最美好的礼物</p>
+                    <p id="message-line-3">每一天有你的陪伴，都是上天的恩赐</p>
+                    <p id="message-line-4">我爱你，不仅是今天，而是永远</p>
+                    <p id="message-line-5">愿你的笑容永远灿烂</p>
+                    <p id="message-line-7">愿我们的爱情永远甜蜜</p>
+                    <p id="message-line-6">生日快乐，我的宝贝！</p>
+                </div>
+            </div>
+            
+            <!-- 互动按钮 -->
+            <div class="interactive-buttons">
+                <button id="love-button" class="btn">点击获取爱心</button>
+                <button id="music-button" class="btn">播放/暂停音乐</button>
+            </div>
+        </main>
+        
+        <!-- 页脚 -->
+        <footer>
+            <p>用我全部的爱，献给我最亲爱的你 💖</p>
+        </footer>
+    </div>
+    
+    <!-- 音频元素 -->
+    <audio id="background-music" loop autoplay>
+        <source src="audio/birthday_music.ogg" type="audio/ogg">
+        <source src="audio/birthday_music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="script.js"></script>
+    
+    <script>
+        // --- 照片轮播功能 (保留您已有的功能) ---
+        (function() {
+            const images = document.querySelectorAll('.slideshow-image');
+            if (images.length === 0) return; // 如果没有图片，则不执行
+            let currentImageIndex = 0;
+            const displayTime = 5000;
+
+            // 随机选择第一个显示的图片
+            currentImageIndex = Math.floor(Math.random() * images.length);
+            images[currentImageIndex].classList.add('active');
+
+            function showNextImage() {
+                images[currentImageIndex].classList.remove('active');
+                let nextIndex;
+                do {
+                    nextIndex = Math.floor(Math.random() * images.length);
+                } while (nextIndex === currentImageIndex && images.length > 1);
+                currentImageIndex = nextIndex;
+                images[currentImageIndex].classList.add('active');
+            }
+
+            setInterval(showNextImage, displayTime);
+        })();
+
+        // --- 新增：背景音乐播放功能 ---
+        (function() {
+            const music = document.getElementById('background-music');
+            const musicButton = document.getElementById('music-button');
+            let hasInteracted = false; // 标记用户是否已互动
+
+            // 尝试播放音乐的函数
+            function tryPlayMusic() {
+                // 只有在用户互动过，并且音乐是暂停状态时才尝试播放
+                if (hasInteracted && music.paused) {
+                    // .play() 返回一个 Promise，我们可以用它来处理可能发生的错误
+                    music.play().catch(error => {
+                        console.log("音乐播放被浏览器阻止:", error);
+                    });
+                }
+            }
+
+            // 播放/暂停按钮的逻辑
+            musicButton.addEventListener('click', function() {
+                hasInteracted = true; // 点击按钮也算作互动
+                if (music.paused) {
+                    music.play();
+                } else {
+                    music.pause();
+                }
+            });
+            
+            // 监听整个页面的第一次点击事件，用于触发自动播放
+            function onFirstInteraction() {
+                hasInteracted = true;
+                tryPlayMusic();
+                // 成功触发一次后，就移除这个监听，避免重复执行
+                document.body.removeEventListener('click', onFirstInteraction);
+                document.body.removeEventListener('touchstart', onFirstInteraction);
+            }
+
+            document.body.addEventListener('click', onFirstInteraction);
+            document.body.addEventListener('touchstart', onFirstInteraction); // 兼容移动设备触摸
+
+        })();
+    </script>
+</body>
+</html>
