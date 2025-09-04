@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐！我最心爱的小猪！</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+</head>
+<body>
+    <!-- 粒子背景 -->
+    <div id="particles-js"></div>
+    
+    <!-- 主内容容器 -->
+    <div class="container">
+        <!-- 头部 -->
+        <header>
+            <h1 id="birthday-wish">生日快乐！我最心爱的小猪！</h1>
+            <div class="birthday-countdown">
+                <span id="days"></span>
+                <span id="hours"></span>
+                <span id="minutes"></span>
+                <span id="seconds"></span>
+            </div>
+        </header>
+        
+        <!-- 主要信息区域 -->
+        <main>
+            <!-- 爱心图片 -->
+            <!-- <div class="heart-container">
+                <div class="heart"></div>
+            </div> -->
+            
+            <!-- Lottie动画 -->
+            <!-- <div style="display: flex; justify-content: center; margin: 2rem 0;">
+                <dotlottie-wc src="https://lottie.host/8b1de420-fbf3-4ff9-984e-04558d5acd67/1Kv8WlDvQq.lottie" style="width: 300px; height: 300px" speed="1" autoplay loop></dotlottie-wc>
+            </div> -->
+            <!-- 爱心图片和动画区域 -->
+            <div style="display: flex; justify-content: center; align-items: center; gap: 60px; margin-bottom: 3rem;">
+    <!-- Lottie动画 - 位于爱心左侧 -->
+                <div style="width: 300px; height: 300px;">
+                    <dotlottie-wc src="https://lottie.host/8b1de420-fbf3-4ff9-984e-04558d5acd67/1Kv8WlDvQq.lottie" style="width: 100%; height: 100%;" speed="1" autoplay loop></dotlottie-wc>
+                </div>
+    
+    <!-- 爱心图片 -->
+                <div class="heart-container">
+                    <div class="heart"></div>
+                </div>
+                
+    <!-- Lottie动画 - 位于爱心右侧 -->
+                <div style="width: 300px; height: 300px;">
+                    <dotlottie-wc src="https://lottie.host/8aca5568-0b0f-4ae3-b332-12ba66e598c8/o2Awh0NJVh.lottie" style="width: 100%; height: 100%;" speed="1" autoplay loop></dotlottie-wc>
+                </div>
+            </div>
+            
+            <!-- 照片展示区域和甜言蜜语 -->
+            <div class="content-wrapper">
+                <!-- 照片展示区域 -->
+                <div class="photo-placeholder">
+                    <p>点击这里添加我们的合照</p>
+                    <input type="file" id="photo-upload" accept="image/*">
+                </div>
+                
+                <!-- 甜言蜜语 -->
+                <div class="love-message">
+                    <p id="message-line-1">亲爱的，今天是你的生日</p>
+                    <p id="message-line-2">我想告诉你，你是我生命中最美好的礼物</p>
+                    <p id="message-line-3">每一天有你的陪伴，都是上天的恩赐</p>
+                    <p id="message-line-4">我爱你，不仅是今天，而是永远</p>
+                    <p id="message-line-5">愿你的笑容永远灿烂</p>
+                    <p id="message-line-7">愿我们的爱情永远甜蜜</p>
+                    <p id="message-line-6">生日快乐，我的宝贝！</p>
+                </div>
+            </div>
+            
+            <!-- 互动按钮 -->
+            <div class="interactive-buttons">
+                <button id="love-button" class="btn">点击获取爱心</button>
+                <button id="music-button" class="btn">播放/暂停音乐</button>
+            </div>
+        </main>
+        
+        <!-- 页脚 -->
+        <footer>
+            <p>用我全部的爱，献给我最亲爱的你 💖</p>
+        </footer>
+    </div>
+    
+    <!-- 音频元素 -->
+    <audio id="background-music" loop autoplay>
+        <source src="audio/birthday_music.ogg" type="audio/ogg">
+        <source src="audio/birthday_music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
